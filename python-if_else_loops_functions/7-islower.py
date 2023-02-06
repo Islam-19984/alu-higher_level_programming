@@ -1,8 +1,10 @@
 #!/usr/bin/python3
-# 7-islower.py
-def islower(c):
-"""Check for lowercase characters."""
-if ord(c) >= 97 and ord(c) <= 122:
-return True
-else:
-return False
+def uppercase(str):
+    for c in str:
+        isupper = ord(c) >= ord('a') and ord(c) <= ord('z')
+        if isupper:
+            # difference between 'a' and 'A'
+            diff = ord('A') - ord('a')
+            c = chr(ord(c) + diff)
+        print("{}".format(c), end='')
+    print()
