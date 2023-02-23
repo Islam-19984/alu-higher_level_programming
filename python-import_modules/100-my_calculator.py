@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-if__name__ == "__main__":
+if _name_ == "_main_":
     """Handle basic arithmetic operations."""
     from calculator_1 import add, sub, mul, div 
     import sys
