@@ -1,7 +1,6 @@
 #!/usr/bin/python3
+# 5-no_c.py
+
 def no_c(my_string):
-    my_string =
-my_string.translate({ord("c"): None})
-    my_string =
-my_string.translate({ord("C"): None})
-    return my_string
+"""Remove all characters c and C from a string."""
+copy = [x for x in my_string if x ! = 'c' and x != 'c']
