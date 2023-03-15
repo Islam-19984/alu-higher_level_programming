@@ -11,6 +11,6 @@ class Square:
     Private instance attributes: size
     """
 
-    def _init_(self, size):
+    def __init__(self, size):
         """Initializes size"""
-        self.__size = size
+        self.__size = size
