@@ -3,7 +3,7 @@
 
 
 
-class square:
+class Square:
     """Creates a square.
     Private instance attributes: size
     """
