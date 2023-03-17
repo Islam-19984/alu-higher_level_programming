@@ -47,7 +47,7 @@ class Rectangle:
             The new Rectangle instance
         """
         return cls(size, size)
-    
+
     @staticmethod
     def bigger_or_equal(rect_1, rect_2):
         """Returns the biggest rectangle based on the area
@@ -109,4 +109,4 @@ class Rectangle:
         """Returns the rectangle perimeter"""
         if self.__width == 0 or self.__height == 0:
             return 0
-        return 2 * (self.__width + self.__height)        
+        return 2 * (self.__width + self.__height)     
