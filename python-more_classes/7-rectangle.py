@@ -21,7 +21,7 @@ class Rectangle:
         rectangle = ''
         for i in range(self.__height):
             for j in range(self.__width):
-                rectangle += str(slef.print_symbol)
+                rectangle += str(self.print_symbol)
             rectangle += '\n'
         return rectangle[:-1]
 
@@ -29,7 +29,7 @@ class Rectangle:
         """Return a string representation of the rectangle to be able
         to recreate a new instance by using eval() (see example below)
         """
-        return "Rectangle9({}, {})".format(self.__width, self.__height)
+        return "Rectangle({}, {})".format(self.__width, self.__height)
     def __del__(self):
         """Print the message Bye rectangle...
         (...being 3 dots not ellipsis) when an
@@ -57,7 +57,7 @@ class Rectangle:
     @property
     def height(self):
         """Retrieves the height."""
-        return slef.__height
+        return self.__height
     
     @height.setter
     def height(self, value):
