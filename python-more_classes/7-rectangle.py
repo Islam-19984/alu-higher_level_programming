@@ -30,6 +30,7 @@ class Rectangle:
         to recreate a new instance by using eval() (see example below)
         """
         return "Rectangle({}, {})".format(self.__width, self.__height)
+
     def __del__(self):
         """Print the message Bye rectangle...
         (...being 3 dots not ellipsis) when an
@@ -80,5 +81,3 @@ class Rectangle:
         if self.__width == 0 or self.__height == 0:
             return 0
         return 2 * (self.__width + self.__height)
-
-
