@@ -1,10 +1,11 @@
 #!/usr/bin/python3
+"""list of available attributes and method of an object"""
 
 
 def lookup(obj):
+    """Return attributes
+    Arg:
+        - obj: objecg to get attributes
     """
-    Return a list of available attributes and mothods of an object.
-    """
-    attrs = dir(obj)
-    methods = [attr for attr in atrs if callable(getatter(obj, attr))]
-    return atrrs + methods
+
+    return dir(obj)
