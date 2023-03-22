@@ -1,0 +1,2 @@
+6-main.py
+[Exception] area() is not implemented
