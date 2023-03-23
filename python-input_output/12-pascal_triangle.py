@@ -23,4 +23,4 @@ def pascal_triangle(n):
                     break
             new_list.append(1)
             list_of_lists.append(new_list)
-        return list_of_lists
+    return list_of_lists
