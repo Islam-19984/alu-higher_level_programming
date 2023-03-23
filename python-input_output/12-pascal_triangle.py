@@ -3,8 +3,8 @@
 
 
 def pascal_triangle(n):
-    """Returns list- of pascal triangles"""
-    list_of_list = []
+    """Returns list of pascal triangles"""
+    list_of_lists = []
 
     for i in range(n):
         if i == 0:
@@ -13,7 +13,7 @@ def pascal_triangle(n):
             list_of_lists.append([1, 1])
         else:
             last_list = list_of_lists[-1]
-            count = o
+            count = 0
             new_list = [1]
             while count < len(last_list):
                 try:
