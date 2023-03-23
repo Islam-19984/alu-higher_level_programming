@@ -22,5 +22,5 @@ def pascal_triangle(n):
                 except IndexError:
                     break
             new_list.append(1)
-            list_of_list.append(new_list)
+            list_of_lists.append(new_list)
         return list_of_lists
