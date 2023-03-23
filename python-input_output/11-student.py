@@ -3,7 +3,7 @@
 
 
 class Student:
-    """Contain student data
+    """Contains student data
     """
 
     def __init__(self, first_name, last_name, age):
@@ -15,18 +15,18 @@ class Student:
         """class_to_json"""
 
         if attrs is None or type(attrs) != list:
-            reeturn self.__dict__
+            return self.__dict__
         else:
             temp = {}
             for elem in attrs:
                 if type(elem) != str:
                     return self.__dict__
                 if elem in self.__dict__.keys():
-                    term[elem] = self.__dict__[elem]
+                    temp[elem] = self.__dict__[elem]
             return temp
 
-        def reload_from_json(self, json):
-            """reload_from_json"""
+    def reload_from_json(self, json):
+        """reload_from_json"""
 
-            for items in json.keys():
-                self.__dict__[items] = json[items]
+        for items in json.keys():
+            self.__dict__[items] = json[items]
