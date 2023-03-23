@@ -10,9 +10,9 @@ def append_after(filename="", search_string="", new_string=""):
 
     count = 0
     with open(filename, mode="w", encoding="utf-8") as writefile:
-        for line in data:
+        for lines in data:
             count += 1
             if search_string in lines:
                 data.insert(count, new_string)
-            for line in data:
+            for lines in data:
                 writeFile.write(lines)
