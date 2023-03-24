@@ -10,4 +10,3 @@ class MyList(list):
         temp_list = self[:]
         temp_list.sort()
         print("{}".format(temp_list))
-
