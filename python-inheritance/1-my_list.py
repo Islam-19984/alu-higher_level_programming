@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-
-"""A class that inherits."""
+"""List inheritance"""
 
 
 class MyList(list):
-    """Contains list."""
+    """Class MyList inherits list."""
 
     def print_sorted(self):
         """Prints sorted list."""
-
-        sorted_list = sorted(self)
-        print(sorted_list)
+        temp_list = self[:]
+        temp_list.sort()
+        print("{}".format(temp_list))
 
