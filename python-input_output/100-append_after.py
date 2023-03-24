@@ -1,18 +1,19 @@
 #!/usr/bin/python3
-"""append_after"""
+"""
+open find replace close
+"""
 
 
 def append_after(filename="", search_string="", new_string=""):
-    """append_after"""
-
-    with open(filename, mode="r+", encoding="utf-8") as readfile:
-        data = readfile.readlines()
-
-    count = 0
-    with open(filename, mode="w", encoding="utf-8") as writefile:
-        for lines in data:
-            count += 1
-            if search_string in lines:
-                data.insert(count, new_string)
-            for lines in data:
-                writeFile.write(lines)
+    """
+    inserts a line of text to a file,
+    after each line containing a specific string
+    """
+    with open(filename, "r+", encoding="utf-8") as f:
+        s = ""
+        for line in f:
+            s += line
+            if search_string in line:
+                s += new_string
+        f.seek(0)
+        f.write(s)
