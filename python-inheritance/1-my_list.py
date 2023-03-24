@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """A class that inherits."""
 
 
@@ -10,3 +11,4 @@ class MyList(list):
 
         sorted_list = sorted(self)
         print(sorted_list)
+

@@ -1,3 +1,0 @@
-9-main.py
-[Rectangle] 3/5
-15
