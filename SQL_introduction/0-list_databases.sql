@@ -1,2 +1,2 @@
 -- a script that list all databases of your MYSQL server.
-SHOW DATABASE;
+SHOW DATABASES;
