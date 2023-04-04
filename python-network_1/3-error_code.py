@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-"""A python script """
+"""A python script"""
 
 import urllib.request
 import urllib.error
