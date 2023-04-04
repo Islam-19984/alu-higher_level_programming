@@ -1,3 +1,3 @@
 #!/bin/bash
 # comment
-curl -sX POST -H "Content-type: application/json" -d @"$2" "$!"
+curl -sX POST -H "Content-Type: application/json" -d @"$2" "$1"
