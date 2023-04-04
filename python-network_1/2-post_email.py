@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """documented"""
 
+
 import urllib.request
 import urllib.parse
 import sys
