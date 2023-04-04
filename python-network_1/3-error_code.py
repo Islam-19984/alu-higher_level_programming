@@ -3,10 +3,10 @@
 
 import urllib.request
 import urllib.error
-import sys 
+import sys
 
-If __name__ == '__main__':
-    """Documented"""
+if __name__ == '__main__':
+    """"Documented"""
     url = sys.argv[1]
     req = urllib.request.Request(url)
     try:
