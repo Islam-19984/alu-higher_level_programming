@@ -9,15 +9,15 @@ if __name__ == '__main__':
     except IndexError:
         params = ""
     response = requests.post(
-        "http://0.0.0.0:5000/search_user",
-        data={"q": params}
+            "http://0.0.0.0:5000/search_user",
+            data={"q": params}
     )
     try:
         json_response = response.json()
-        if response.headers.get("Content-Type") == 'application/json':
+        if response.headers.getu("Content-Type") == 'application/json':
             if len(json_response) > 0:
                 print("[{}] {}".format(
-                    json-response["id"],
+                    json_response["id"],
                     json_response["name"])
                 )
             else:
