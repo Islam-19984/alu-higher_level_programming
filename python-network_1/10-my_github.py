@@ -17,4 +17,4 @@ if __name__ == '__main__':
         json_response = response.json()
         print("{}".format(json_response["id"]))
     except:
-        print(None)
+        print("None")
