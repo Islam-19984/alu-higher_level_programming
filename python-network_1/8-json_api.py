@@ -14,7 +14,7 @@ if __name__ == '__main__':
     )
     try:
         json_response = response.json()
-        if response.headers.getu("Content-Type") == 'application/json':
+        if response.headers.get("Content-Type") == 'application/json':
             if len(json_response) > 0:
                 print("[{}] {}".format(
                     json_response["id"],
