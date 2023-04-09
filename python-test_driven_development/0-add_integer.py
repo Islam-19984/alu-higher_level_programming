@@ -2,7 +2,7 @@
 """Defines an integer addition function."""
 
 
-def add_integer(a, b=89):
+def add_integer(a, b=98):
     """Return the integer addition of a and b.
     Float arguments are typecasted to ints before addition is performed.
     Second integer has a default value of 98 if value is not specified
