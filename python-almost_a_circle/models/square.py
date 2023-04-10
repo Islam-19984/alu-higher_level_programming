@@ -2,6 +2,7 @@
 """ Module that contains class Square,
 inheritance of class Rectangle
 """
+from models.rectangle import Rectangle
 
 
 class Square(Rectangle):
@@ -22,7 +23,7 @@ class Square(Rectangle):
 
     @property
     def size(self):
-        """ Getter- size """
+        """ Getter size """
         return self.width
 
     @size.setter
@@ -67,6 +68,6 @@ class Square(Rectangle):
             if key == 'size':
                 dict_res[key] = getattr(self, 'width')
             else:
-                dict_res[key] = getatte(self, key)
+                dict_res[key] = getattr(self, key)
 
             return dict_res
