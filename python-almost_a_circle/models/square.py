@@ -28,7 +28,7 @@ class Square(Rectangle):
 
     @size.setter
     def size(self, value):
-        """ setter size """
+        """ Setter size """
         self.width = value
         self.height = value
 
@@ -47,10 +47,10 @@ class Square(Rectangle):
             list_atr = ['id', 'size', 'x', 'y']
             for i in range(len(args)):
                 if list_atr[i] == 'size':
-                setattr(self, 'width', args[i])
-                setattr(self, 'height', args[i])
-            else:
-                setattr(self, list_atr[i], args[i])
+                    setattr(self, 'width', args[i])
+                    setattr(self, 'height', args[i])
+                else:
+                    setattr(self, list_atr[i], args[i])
         else:
             for key, value in kwargs.items():
                 if key == 'size':
@@ -60,7 +60,7 @@ class Square(Rectangle):
                     setattr(self, key, value)
 
     def to_dictionary(self):
-        """ Return a dictionary with attributes """
+        """ Returns a dictionary with attributes """
         list_atr = ['id', 'size', 'x', 'y']
         dict_res = {}
 
@@ -70,4 +70,4 @@ class Square(Rectangle):
             else:
                 dict_res[key] = getattr(self, key)
 
-            return dict_res
+        return dict_res
