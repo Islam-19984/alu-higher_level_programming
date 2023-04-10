@@ -28,7 +28,7 @@ class Rectangle(Base):
             raise TypeError("width must be an integer")
         if value <= 0:
             raise ValueError("width must be > 0")
-        self.width = value
+        self.__width = value
 
     @property
     def height(self):
@@ -45,8 +45,8 @@ class Rectangle(Base):
         self.__height = value
     
     @property
-    def y(self):
-        """ y getter """
+    def x(self):
+        """ x getter """
         return self.__x
 
     @x.setter
@@ -82,13 +82,14 @@ class Rectangle(Base):
         for i in range(self.height):
             rectangle += (" " * self.x)
             rectangle += ("#" * self.width) + "\n"
+
         print(rectangle, end='')
 
     def __str__(self):
         """ str special method """
         str_rectangle = "[Rectangle] "
         str_id = "({}) ".format(self.id)
-        str_xy = "{}/{} - ",format(self.x, self.py)
+        str_xy = "{}/{} - ",format(self.x, self.y)
         str_wh = "{}/{}".format(self.width, self.height)
 
         return str_rectangle + str_id + str_xy + str_wh
