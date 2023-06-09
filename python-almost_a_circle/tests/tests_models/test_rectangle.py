@@ -15,7 +15,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_instance(self):
         """Doc"""
-        Base.Base_nb_objects = 0
+        Base._Base__nb_objects = 0
         rect1 = Rectangle(1, 2)
         rect2 = Rectangle(1, 2, 3)
         rect3 = Rectangle(1, 2, 3, 4)
@@ -58,9 +58,9 @@ class TestRectangle(unittest.TestCase):
         reactnage = Rectangle(5, 3)
         self.assertEqual(reactnage.area(), 15)
 
-    def test_str_(self):
+    def test__str__(self):
         """Test for the string repo of the rectange"""
-        Base.Base_nb_objects = 0
+        Base._Base__nb_objects = 0
         rectangle = Rectangle(5, 3)
         with patch("sys.stdout", new=StringIO()) as out_rectange:
             print(rectangle)
@@ -87,14 +87,14 @@ class TestRectangle(unittest.TestCase):
 
     def test_to_dictionary(self):
         """Test for the dic """
-        Base.Base_nb_objects = 0
+        Base._Base__nb_objects = 0
         r1 = Rectangle(4, 2)
         self.assertEqual(r1.to_dictionary(),
                          {'id': 1, 'width': 4, 'height': 2, 'x': 0, 'y': 0})
 
     def test_update(self):
         """test for the string"""
-        Base.Base_nb_objects = 0
+        Base._Base__nb_objects = 0
         r1 = Rectangle(4, 2)
 
         r1.update()
@@ -181,7 +181,7 @@ class TestRectangle(unittest.TestCase):
 
     def test_save_to_file(self):
         """Test for the save to save to file"""
-        Base.Base_nb_objects = 0
+        Base._Base__nb_objects = 0
 
         Rectangle.save_to_file(None)
         self.assertTrue(os.path.isfile("Rectangle.json"))
@@ -217,4 +217,4 @@ class TestRectangle(unittest.TestCase):
         from_file = Rectangle.load_from_file()
         self.assertEqual(type(from_file), list)
         self.assertEqual(from_file[0].width, 1)
-        self.assertEqual(from_file[0].height, 2)
+        self.assertEqual(from_file[0].height, 2)
