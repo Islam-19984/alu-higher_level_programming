@@ -3,6 +3,6 @@
 const { argv } = process;
 
 if (argv[2]) console.log(argv[2]);
-else{
+else: {
   console.log('No argument');
 }
