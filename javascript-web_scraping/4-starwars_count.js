@@ -14,9 +14,9 @@ request(url, (err, res) => {
     return;
   }
 
-  data = JSON.parse(res.body).result;
+  data = JSON.parse(res.body).results;
   data.forEach(obj) => {
-    obj.character.forEach((character) => {
+    obj.characters.forEach((character) => {
       if (character.includes('/18/')) count++;
     });
   });
