@@ -1,9 +1,15 @@
 #!/usr/bin/node
+
+const { argv } = require('process');
 const request = require('request');
 const fs = require('fs');
+const url = argv[2];
+const file = argv[3];
 
-request(process.argv[2], function (err, response, body) {
-  if (err =null) {
-     fs.writeFileSync(process.argv[3], body);
-  }
+request(url, async (err, res) => {
+  err
+    ? console.log(err)
+    : await fs.writeFile(file,nres.body, (err) => {
+      if (err) console.log(err);
+    });
 });
