@@ -21,6 +21,6 @@ request.get(url, (error, response, body) => {
       }
       const characterData = JSON.parse(body);
       console.log(characterData.name);
-    });
-  }
+    });
+  }
 });
