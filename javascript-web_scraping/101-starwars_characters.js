@@ -29,6 +29,6 @@ const getCharacters = (index) => {
     }
     const characterData = JSON.parse(body);
     console.log(characterData.name);
-    getCharacters(index + 1);
-  });
+    getCharacters(index + 1);
+  });
 };
